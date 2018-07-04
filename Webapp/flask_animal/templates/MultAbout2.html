@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>{% block title %}African Savnaa Grazers{% endblock %}</title>
+<link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+</style>
+<body>
+	
+	<div class = "page">
+<img style="width:100%" src="/static/home-rev2.jpg">
+	</div>
+	<ul>
+		<li><a href="/">HOME</a></li>
+		<li><a href="/about">ABOUT</a></li>
+		<li><a href="/examples">EXAMPLES</a></li>
+		<li style="float:right"><a href="mailto:mrtdesai@gmail.com"><i class="fas fa-envelope" style="color:white"></i></a></li>
+           <li style="float:right"><a href="https://www.linkedin.com/in/tushar-v-desai"><i class="fab fa-linkedin" style="font-size:14px;color:white"></i></a></li>
+	</ul>
+
+	<p align="justify" style="margin-left:120px;margin-right:120px">
+<center><b><font size="4">About this App</font></b></center>
+	<br>
+	This app was created to help ecologists quickly identify animal images taken from camera traps in the African Savanna. The app takes uploaded image(s) in .jpg format and classifies the image(s) using the VGG-16 Convolutional Neural Network (CNN) which was fine-tuned and trained on images taken in the African Savanna. In the current version, the VGG-16 CNN has been trained for Elephant, Zebra and Wildebeest. More animal species found in the African Savanna will be added to the classifier soon! In the current version, a maximum of 100 images can be uploaded at one time.</p>
+<br>
+<br>
+<p align="justify" style="margin-left:120px;margin-right:120px">
+<center><b><font size="4">Data</font></b></center>
+Images used to fine-tune VGG16 CNN were taken as part of the <a href="https://www.snapshotserengeti.org/beta/">Serengeti Snapshot Project</b></a>. Information on how image data can be obtained can be found over <a href="https://www.snapshotserengeti.org/beta/">here</b></a>.</p>
+
+{% block content %}{% endblock %}
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

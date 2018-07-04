@@ -1,0 +1,53 @@
+{% extends "MultIndex5.html" %}
+{% block content %}
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<br>
+<h2> Prediction using finetuned VGG16 CNN Model: </h2>
+<p>
+<table>
+  <tr>
+    <th>Class</th>
+    <th>Probability</th>
+  </tr>
+  <tr>
+    <td>Elephant </td>
+    <td>{{preddict.Elephant }}</td>
+  </tr>
+  <tr>
+    <td>Wildebeest </td>
+    <td>{{preddict.Wildebeest}}</td>
+  </tr>
+  <tr>
+    <td>Zebra </td>
+    <td>{{preddict.Zebra }}</td>
+  </tr>
+  <tr>
+    <td>Classification </td>
+    <td>{{preddict.Classification }}</td>
+  </tr>
+</table>
+<br>
+<h2> Uploaded Image: </h2>
+<p>
+<img style="width:80%" src="/static/{{ image_name}}">
+<br>
+{% endblock %} 
+	
+	
+
