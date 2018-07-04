@@ -1,27 +1,11 @@
 import numpy as np
-#import pandas as pd
-import os #, sys
-#import glob
-#import time
-#from sklearn.linear_model import LogisticRegression
-#from sklearn.externals import joblib
-#from flask import Flask, flash
-#import flask
+import os
 from flask_animal import app
 from flask import render_template
 from flask import request, redirect, url_for
 import json
-#import operator
-#import string
-#from collections import Counter
-#from itertools import chain
-#from werkzeug.wrappers import Request, Response
 from werkzeug.utils import secure_filename
-#from flask import send_from_directory
 import tensorflow as tf
-
-#from keras import backend as K
-#from keras.metrics import categorical_accuracy, top_k_categorical_accuracy
 from keras.models import model_from_json
 from keras.preprocessing.image import load_img, img_to_array #, ImageDataGenerator
 from collections import OrderedDict
